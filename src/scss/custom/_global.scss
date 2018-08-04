@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Roboto:400,700');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header,
+footer,
+section {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+}
+
+@media (max-width: $screen-md) {
+
+}
+
+@media (max-width: $screen-sm) {
+
+}
