@@ -10,26 +10,60 @@ $(document).ready(function() {
 		animateOut: 'fadeOut'
 	});
 
-	$("[data-dinaanim]").each(function () {
+	var owl_carousel_products = $('.owl-carousel-products').owlCarousel({
+		margin: 15,
+		loop: true,
+		nav: false,
+		dots: false,
+		autoplay: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 4,
+			},
+			1000: {
+				items: 5,
+			},
+			1200: {
+				items: 6,
+			}
+		}
+	});
+
+	$('.btn-owl-carousel-products-left').on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_products.trigger('prev.owl.carousel');
+	});
+
+	$('.btn-owl-carousel-products-right').on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_products.trigger('next.owl.carousel');
+	});
+
+	$('[data-dinaanim]').each(function () {
 
 		var $this = $(this);
 
-		$this.addClass("dinaAnim-invisible");
+		$this.addClass('dinaAnim-invisible');
 
 		if ($(window).width() > 767) {
 
 			$this.appear(function () {
 
-				var delay = ($this.data("dinadelay") ? $this.data("dinadelay") : 1);
+				var delay = ($this.data('dinadelay') ? $this.data('dinadelay') : 1);
 
 				if (delay > 1) $this.css("animation-delay", delay + "ms");
 
-				$this.addClass("dinaAnim-animated");
-				$this.addClass('dinaAnim-' + $this.data("dinaanim"));
+				$this.addClass('dinaAnim-animated');
+				$this.addClass('dinaAnim-' + $this.data('dinaanim'));
 
 				setTimeout(function () {
 
-					$this.addClass("dinaAnim-visible");
+					$this.addClass('dinaAnim-visible');
 
 				}, delay);
 
