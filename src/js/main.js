@@ -44,6 +44,34 @@ $(document).ready(function() {
 		owl_carousel_products.trigger('next.owl.carousel');
 	});
 
+	var owl_carousel_our_factory = $('.owl-carousel-our-factory').owlCarousel({
+		margin: 15,
+		loop: true,
+		nav: false,
+		dots: false,
+		autoplay: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			}
+		}
+	});
+
+	$('.btn-owl-carousel-our-factory-left').on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_our_factory.trigger('prev.owl.carousel');
+	});
+
+	$('.btn-owl-carousel-our-factory-right').on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_our_factory.trigger('next.owl.carousel');
+	});
+
 	$('[data-dinaanim]').each(function () {
 
 		var $this = $(this);

@@ -1,0 +1,92 @@
+.services-block {
+    padding: 60px 0px 30px 0px;
+    border-top: 1px solid #dadada;
+
+    .col-md-4 {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+            margin: 15px 0px 10px 0px;
+            font-weight: 500;
+            font-size: 18px;
+            color: #e33b0d;
+        }
+        
+        p {
+            margin: 0px;
+            line-height: 22px;
+            font-size: 14px;
+            color: #646464;
+        }
+        
+        a {
+            margin: 0px 0px 15px 0px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #e33b0d;
+            
+            &.btn-default {
+                margin: 0px;
+                padding: 10px 30px;
+                border: none;
+                background-color: #d8261a;
+                font-weight: 700;
+                font-size: 12px;
+                color: #FFF;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+            }
+        }
+    }
+}
+
+.home-block-recent-works {
+    
+    &.services {
+        background-color: #FFF;
+
+        h3 {
+            margin-top: 0px;
+        }
+
+        .col-md-10 {
+            padding: 50px 15px 30px 15px;
+        }
+    }
+}
+
+.services-block-testimonies {
+    padding-bottom: 50px;
+
+    .row {
+    
+        .col-md-6 {
+            padding-bottom: 30px;
+            
+            &:nth-of-type(1) {
+
+                 h3 {
+                    margin-bottom: 25px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0px;
+
+                    li {
+                        margin: 18px 0px;
+                        padding-left: 25px;
+                        text-align: justify;
+                        font-size: 14px;
+                        color: #646464;
+                        background: transparent url('../img/check-orange.png') left 3px no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

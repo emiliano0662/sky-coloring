@@ -1,0 +1,181 @@
+.our-factory-block-title {
+    padding: 30px 0px;
+    background-color: #e33b0d;
+
+    h1 {
+        margin: 0px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFF;
+    }
+}
+
+.our-factory-block-bg-banner {
+    min-height: 350px;
+    background: transparent url('../img/bg-our-factory-banner.jpg') center center / cover no-repeat;
+}
+
+.our-factory-block-certificate {
+    padding-top: 80px;
+
+    .row {
+    
+        > .col-md-6 {
+            margin-bottom: 50px;
+            
+            &:nth-of-type(1) {
+
+                h3 {
+                    margin: 0px 0px 20px 0px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #e33b0d;
+                }
+
+                p {
+                    margin: 0px 0px 30px 0px;
+                    font-size: 14px;
+                    color: #646464;
+
+                    span {
+                        font-size: 14px;
+                        color: #e33b0d;
+                    }
+                }
+                
+                h4 {
+                    margin: 0px 0px 20px 0px;
+                    font-size: 14px;
+                    color: #000;
+                }
+
+                ul {
+                    margin: 0px;
+                    padding-left: 25px;
+                    list-style: none;
+
+                    li {
+                        padding: 10px 0px 10px 25px;
+                        font-size: 14px;
+                        color: #646464;
+                        background: transparent url('../img/check-orange.png') left center no-repeat;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                 .col-md-12 {
+                    padding: 30px 55px 0px 55px;
+
+                    .btn-owl-carousel-our-factory {
+                        width: 16px;
+                        height: 29px;
+                        top: 48%;
+                        position: absolute;
+
+                        &-left {
+                            left: 20px;
+                            background: transparent url('../img/icon-arrow-home-other-products-left.png') left center no-repeat;
+                        }
+                        &-right {
+                            right: 20px;
+                            background: transparent url('../img/icon-arrow-home-other-products-right.png') right center no-repeat;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.our-factory-block-manufacture-excellence {
+
+    .row {
+
+        &:nth-of-type(2) {
+
+            .col-md-12 {
+                min-height: 300px;
+                padding: 0px 80px 40px 80px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .container-manufacture-excellence {
+                    margin-top: 40px;
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    
+    .our-factory-block-manufacture-excellence {
+
+        .row {
+
+            &:nth-of-type(2) {
+
+                .col-md-12 {
+                    padding: 0px 15px 40px 15px;
+
+                    .container-manufacture-excellence {
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+
+    .our-factory-block-bg-banner {
+        min-height: 200px;
+    }
+
+    .our-factory-block-certificate {
+        padding-top: 50px;
+
+        .row {
+        
+            > .col-md-6 {
+
+                &:nth-of-type(2) {
+
+                    .col-md-12 {
+                        padding: 30px 15px 0px 15px;
+
+                        .btn-owl-carousel-our-factory {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    
+    .our-factory-block-manufacture-excellence {
+
+        .row {
+
+            &:nth-of-type(2) {
+
+                .col-md-12 {
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .container-manufacture-excellence {
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
