@@ -120,11 +120,14 @@
 
 .home-block-products {
 
-    a {
+    .owl-carousel-products-more-requested {
+        margin: 35px 0px 40px 0px;
 
-        img {
-            width: 100%;
-            margin: 35px 0px 40px 0px;
+        a {
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -153,7 +156,7 @@
                 .btn-owl-carousel-products {
                     width: 16px;
                     height: 29px;
-                    top: 30px;
+                    top: 35%;
                     position: absolute;
 
                     &-left {
@@ -355,22 +358,6 @@
 
                     &:nth-of-type(2) {
                         padding-left: 15px;
-                    }
-                }
-            }
-        }
-    }
-
-    .home-block-other-products {
-
-        .row {
-
-            &:nth-of-type(2) {
-
-                .col-md-12 {
-
-                    .btn-owl-carousel-products {
-                        top: 25px;
                     }
                 }
             }
