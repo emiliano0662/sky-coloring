@@ -21,6 +21,13 @@
             }
         }
     }
+
+    &.complement {
+
+        .col-md-12 {
+            justify-content: center;
+        }
+    }
 }
 
 .products-block-list {

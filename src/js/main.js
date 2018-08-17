@@ -118,6 +118,17 @@ $(document).ready(function() {
 		owl_carousel_our_factory.trigger('next.owl.carousel');
 	});
 
+	var owl_carousel_our_factory = $('.owl-carousel-products-detail').owlCarousel({
+		items: 1,
+		margin: 0,
+		loop: true,
+		nav: false,
+		dots: true,
+		autoplay: true,
+		animateOut: 'rollOut',
+		animateIn: 'zoomIn',
+	});
+
 	$(window).scroll(function () {
 
 		if ($(window).width() > 992) {
