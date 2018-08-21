@@ -1,0 +1,208 @@
+.contact-block {
+    padding: 120px 0px 100px 0px;
+
+    h2 {
+        margin: 0px 0px 20px 0px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #e33b0d;
+    }
+
+    p {
+        margin: 0px 0px 20px 0px;
+        font-size: 14px;
+        color: #646464;
+    }
+
+    .content-queries {
+        margin: 40px 0px 40px 0px;
+        padding: 40px 0px;
+        border-top: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+
+        p {
+            margin: 0px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            padding-left: 30px;
+
+            li {
+                margin-bottom: 20px;
+                padding-left: 40px;
+                font-size: 14px;
+                color: #646464;
+                background: transparent url('../img/icon-phone.png') left center no-repeat;
+
+                b {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #000;
+                }
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }  
+        }
+    }
+
+    .content-social-networks {
+        margin-bottom: 40px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+            margin-right: 15px;
+        }
+    }
+
+    .container-form {
+        padding: 30px 50px 20px 50px;
+        border: 1px solid #dadada;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        h2 {
+            margin: 0px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+        }
+
+        p {
+            margin: 0px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            color: #d8261a;
+        }
+
+        .form-control {
+            border-color: #dadada;
+            box-shadow: none;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+        .btn-default {
+            margin-top: 10px;
+            padding: 10px 40px;
+            border: none;
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFF;
+            background-color: #d8261a;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+        }
+
+        .col-md-6 {
+
+            &:nth-of-type(1) {
+                padding-right: 8px;
+            }
+
+            &:nth-of-type(2) {
+                padding-left: 8px;
+            }
+        }
+
+        .row {
+
+            &:nth-of-type(1) {
+
+                .form-group {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &:last-child {
+
+                .form-group {
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .container {
+
+        > .row {
+            
+            > .col-md-6 {
+                
+                &:nth-of-type(1) {
+                    padding-right: 60px;
+                }
+                
+                &:nth-of-type(2) {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+
+    .contact-block {
+        padding: 50px 0px;
+
+        .content-queries {
+            margin-bottom: 30px;
+        }
+        
+        .content-social-networks {
+            margin-bottom: 30px;
+            justify-content: center;
+
+            a {
+                margin: 10px;
+            }
+        }
+
+        .container-form {
+            padding: 30px 20px 20px 20px;
+
+            .col-md-6 {
+
+                &:nth-of-type(1) {
+                    padding-right: 15px;
+                }
+
+                &:nth-of-type(2) {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .container {
+
+            > .row {
+                
+                > .col-md-6 {
+                    
+                    &:nth-of-type(1) {
+                        padding-right: 15px;
+                    }
+                    
+                    &:nth-of-type(2) {
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
