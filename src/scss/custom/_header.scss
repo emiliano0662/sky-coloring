@@ -87,7 +87,7 @@ header {
         z-index: 99999;
 
         .row {
-            padding: 10px 0px;
+            padding: 0px;
                 
             > .col-md-12 {
                 display: flex;
@@ -104,7 +104,7 @@ header {
                             padding: 0px 5px;
                             
                             a {
-                                padding: 8px 5px;
+                                padding: 18px 5px;
                                 font-size: 14px;
                                 color: #646464;
 
@@ -119,6 +119,53 @@ header {
 
                                 .img-responsive {
                                     height: 55px;
+                                }
+                            }
+
+                            &.dropdown {
+
+                                .dropdown-menu {
+                                    margin-top: -1px;
+                                    padding: 0px;
+                                    background-color: #f5f5f5;
+                                    border: none;
+                                    border-top: 3px solid #e33b0d;
+                                    -webkit-border-radius: 0px;
+                                    -moz-border-radius: 0px;
+                                    border-radius: 0px;
+
+                                    li {
+                                        padding: 0px;
+
+                                        a {
+                                            padding: 7px 20px;
+                                            border-bottom: 1px solid #a19f9f;
+                                            color: #333333; 
+                                            
+                                            &.active{
+                                                background-color: #FFF;
+                                                color: #e33b0d;
+                                            }
+                                            
+                                            &:hover {
+                                                background-color: #FFF;
+                                            }
+                                        }
+
+                                        &:last-child {
+
+                                            a {
+                                                border-bottom: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+
+                                    .dropdown-menu {
+                                        display: block;
+                                    }
                                 }
                             }
                         }
@@ -141,9 +188,9 @@ header {
 
                         .navbar-nav {
                             
-                            li {
+                            > li {
 
-                                a {
+                                > a {
                                     padding: 20px 5px;
                                     border-top: 3px solid transparent;
 
@@ -211,6 +258,28 @@ header {
                     }
                 }
             }
+
+            &.fixedHeader {
+
+                .row {
+                        
+                    > .col-md-12 {
+                        
+                        .navbar-collapse {
+
+                            .navbar-nav {
+                                
+                                > li {
+
+                                    > a {
+                                        padding: 20px 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -257,6 +326,43 @@ header {
 
                         .navbar-nav {
                             margin: 7.5px 0px;
+
+                            li {
+                                width: 100%;
+                                float: left;
+                                position: relative;
+
+                                a {
+                                    padding: 8px 5px;
+                                }
+
+                                &.dropdown {
+        
+                                    .dropdown-menu {
+                                        width: 100%;
+                                        float: left;
+                                        position: relative;
+                                        display: block;
+                                        margin-top: 0px;
+                                        box-shadow: none;
+                                        border-top: none;
+        
+                                        li {
+                                            padding: 0px;
+        
+                                            a {
+                                                padding: 8px 20px;
+                                                background-color: #FFF;
+                                                border-bottom: none;
+
+                                                &:hover {
+                                                    color: #e33b0d;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
