@@ -169,6 +169,22 @@
     }
 }
 
+.products-detail-description-block {
+
+    h2 {
+        margin: 0px 0px 20px 0px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #e33b0d;
+    }
+
+    p {
+        margin: 0px 0px 20px 0px;
+        font-size: 14px;
+        color: #646464;
+    }
+}
+
 @media (max-width: $screen-md) {
     
     .products-detail-block {
