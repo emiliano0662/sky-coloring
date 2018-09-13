@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$("#content-fixed-link-phone").load("block-fixed-link-phone.html");
+
 	var owl_carousel_main = $('.owl-carousel-main').owlCarousel({
 		items: 1,
 		margin: 0,
